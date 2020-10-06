@@ -27,7 +27,7 @@ public class ApiServiceImplTest {
     @Test
     public void testGetUsers() throws Exception {
 
-        List<User> users = apiService.getUsers(2);
+        List<User> users = apiService.getUsers(1);
 
         assertEquals(2, users.size());
     }
