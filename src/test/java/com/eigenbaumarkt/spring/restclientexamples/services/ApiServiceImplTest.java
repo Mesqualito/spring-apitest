@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -29,6 +29,6 @@ public class ApiServiceImplTest {
 
         List<User> users = apiService.getUsers(2);
 
-        assertEquals(3, users.size());
+        assertEquals(2, users.size());
     }
 }
