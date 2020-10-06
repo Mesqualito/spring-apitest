@@ -13,7 +13,7 @@ public class Location implements Serializable
     private String state;
     private String postcode;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 2197890630079973916L;
+    private final static long serialVersionUID = -3532048267747973846L;
 
     public String getStreet() {
         return street;

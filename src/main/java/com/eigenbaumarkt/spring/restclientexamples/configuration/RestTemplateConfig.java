@@ -9,18 +9,8 @@ import org.springframework.web.client.RestTemplate;
 public class RestTemplateConfig {
 
     @Bean
-    public RestTemplateBuilder restTemplateBuilder() {
-        // see: https://stackoverflow.com/a/60725247/7773582
-        // Need to provide a rest template builder because
-        // @RestTemplateAutoConfiguration does not work with webflux
-        return new RestTemplateBuilder();
+    public RestTemplate restTemplate(RestTemplateBuilder builder){
+
+        return builder.build();
     }
-
-     @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
-
-         return builder.build();
-
-     }
-
 }

@@ -12,7 +12,7 @@ public class ExpirationDate implements Serializable
     private Integer timezoneType;
     private String timezone;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -4609482111208139336L;
+    private final static long serialVersionUID = 4661228813349752965L;
 
     public String getDate() {
         return date;

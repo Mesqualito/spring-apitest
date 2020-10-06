@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class ApiServiceImpl implements ApiService {
 
-    private final RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     public ApiServiceImpl(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;

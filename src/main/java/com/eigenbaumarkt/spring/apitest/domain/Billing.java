@@ -10,7 +10,7 @@ public class Billing implements Serializable
 
     private Card card;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = -1851431012083044163L;
+    private final static long serialVersionUID = 6577338081290507077L;
 
     public Card getCard() {
         return card;

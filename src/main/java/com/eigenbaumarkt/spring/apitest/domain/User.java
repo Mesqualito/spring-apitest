@@ -19,7 +19,8 @@ public class User implements Serializable
     private String language;
     private String currency;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-    private final static long serialVersionUID = 4323311117649228180L;
+
+    private final static long serialVersionUID = 270727596527329664L;
 
     public String getGender() {
         return gender;
